@@ -14,7 +14,7 @@ This collection can be used as a cheatsheet and will be expanded upon as I work 
 ## How to use it
 
 ## Collection
-
+Below are brief explanations and examples of methods and functionalities.  
 ### Reduce method
 The reduce() method executes a reducer function for each value of an array. Returns a single value which is the function's accumulated result.  
 In the example below, `people` is an array of objects which has a `salary` property with integer values.
