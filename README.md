@@ -2,7 +2,6 @@
 [![Commit-activity][commit-activity-shield]][commit-activity-url]
 [![Issues][issues-shield]][issues-url]
 [![Repo-size][repo-size-shield]][repo-size-url]
-[![License][license-shield]][license-url]  
 [![Forks][forks-shield]][forks-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -30,8 +29,6 @@ section of the project.
 [issues-url]: https://github.com/StokicDusan/Useful-Javascript-Functions/issues
 [commit-activity-shield]: https://img.shields.io/github/last-commit/StokicDusan/Useful-Javascript-Functions
 [commit-activity-url]: https://github.com/StokicDusan/Useful-Javascript-Functions/graphs/commit-activity
-[license-url]: https://github.com/StokicDusan/IEEE-802.3av/blob/main/LICENSE
-[license-shield]: https://img.shields.io/github/license/StokicDusan/IEEE-802.3av
 [repo-size-shield]: https://img.shields.io/github/repo-size/StokicDusan/Useful-Javascript-Functions
 [repo-size-url]: https://img.shields.io/github/repo-size/StokicDusan/Useful-Javascript-Functions
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=plastice&logo=linkedin&logoColor=white
