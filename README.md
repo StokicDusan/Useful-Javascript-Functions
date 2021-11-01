@@ -9,3 +9,9 @@ This collection can be used as a cheatsheet and will be expanded upon as I work 
 
 ## Collection
 
+## Provide Feedback
+
+If you encounter any bugs or have suggestions, please file an issue in the
+[Issues][issues-url]
+section of the project.
+
