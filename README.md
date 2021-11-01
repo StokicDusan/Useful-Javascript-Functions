@@ -6,15 +6,20 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Welcome to Useful-Javascript-Functions 
-
 This is a collection of tips and references to functions and some chunks and pieces of useful Javascript functionalities that might come in handy to beginers for learning or working on Javascript projects.  
 
 This collection can be used as a cheatsheet and will be expanded upon as I work on perfectiong my own knowledge in Javascript.
 
 ## How to use it
+Examples can be run from the scripts directory. Cloning and running a live server on this repository, you can test all the scripts on `index.html` which is setup for all the examples in the directory.  
+Be sure to change the source script for the script you wish to test.
+```html
+    <script src="testGetElementHelper.js"></script>
+```
 
 ## Collection
 Below are brief explanations and examples of methods and functionalities.  
+
 ### Reduce method
 The reduce() method executes a reducer function for each value of an array. Returns a single value which is the function's accumulated result.  
 In the example below, `people` is an array of objects which has a `salary` property with integer values.
