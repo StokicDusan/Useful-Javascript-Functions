@@ -15,6 +15,21 @@ This collection can be used as a cheatsheet and will be expanded upon as I work 
 
 ## Collection
 
+### Reduce method
+The reduce() method executes a reducer function for each value of an array. Returns a single value which is the function's accumulated result.  
+In the example below, `people` is an array of objects which has a `salary` property with integer values.
+```js
+// 1st parameter ('total') - total of all calculations
+// 2nd parameter ('current') - current iteration/value
+const totalSalary = people.reduce((total, current) => {
+        total += current.salary
+        console.log(current.salary) // 100 500 230 350  350  350  220  100
+        console.log(total)          // 105 605 835 1185 1535 1885 2105 2205
+        return total                // we always return total !!!
+    }, 5)                           // five is the inital (starting) value
+console.log(totalSalary);           // 2205
+```
+
 ## Provide Feedback
 
 If you encounter any bugs or have suggestions, please file an issue in the
