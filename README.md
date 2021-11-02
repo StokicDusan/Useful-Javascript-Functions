@@ -14,7 +14,7 @@ This collection can be used as a cheatsheet and will be expanded upon as I work 
 Examples can be run from the scripts directory. Cloning and running a live server on this repository, you can test all the scripts on `index.html` which is setup for all the examples in the directory.  
 Be sure to change the source script for the script you wish to test.
 ```html
-    <script src="testGetElementHelper.js"></script>
+    <script src="scripts/testGetElementHelper.js"></script>
 ```
 
 ## Collection
