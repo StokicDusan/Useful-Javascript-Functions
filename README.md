@@ -67,7 +67,6 @@ const ages = people.map((item)=>{
 });
 console.log(ages);                  // [ 20, 25, 23, 32, 31, 29, 23, 43 ]
 
-
 //example with referencing the mapping function
 const getAges2 = (item) => item.age;
 const ages2 = people.map(getAges2)
@@ -81,6 +80,7 @@ console.log(allPositions))          // [ 'position1', 'position2', 'position3', 
 const uniquePositions = [...new Set(people.map((item) => item.position))];
 console.log(uniquePositions)        // [ 'position1', 'position2', 'position3', 'position4' ]
 ```
+
 
 ## Provide Feedback
 
