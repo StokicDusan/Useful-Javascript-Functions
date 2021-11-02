@@ -59,6 +59,7 @@ let { totalPeopleAge, totalSalary } = people.reduce((total, current) => {
 })
 console.log(totalPeopleAge, totalSalary) // 185 2200
 ```
+
 ### Map method
 The map() method creates a new array with the results of calling a function for every array element. The map() method calls the provided function once for each element in an array, in order.
 ```js
@@ -81,6 +82,41 @@ const uniquePositions = [...new Set(people.map((item) => item.position))];
 console.log(uniquePositions)        // [ 'position1', 'position2', 'position3', 'position4' ]
 ```
 
+### Filter And Find method
+The find() method returns the value of the first array element that passes a test (provided by a function) or undefined.  
+The filter() method creates an array filled with all array elements that pass a test (provided by a function).  
+```js
+// filter
+const youngPeople = people.filter((item) => {
+    return item.age < 25
+})
+console.log(youngPeople)
+
+const position2 = people.filter((item) => item.position === "position2")
+console.log(position2);
+console.log(position2[0].name);
+
+// no match
+const seniorPeopleFilter = people.filter((item) => {
+    return item.age > 65
+})
+console.log(seniorPeopleFilter);
+
+// find
+const name2 = people.find((item) => item.name === "name2")
+console.log(name2);
+console.log(name2.position)
+
+// no match
+const seniorPeopleFind = people.find((item) => {
+    return item.age > 65
+})
+console.log(seniorPeopleFind);
+
+// multiple matches - first match
+const position3 = people.find((item) => item.position === "position3")
+console.log(position3);
+```
 
 ## Provide Feedback
 
