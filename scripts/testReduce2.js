@@ -11,7 +11,7 @@ const people = [
     { name: 'name8', age: 19, position: 'position1', salary: 100 },
 ];
 
-let total = people.reduce((total, current) => {
+let totalPeopleSalary = people.reduce((total, current) => {
     total.totalPeople += 1
     total.totalSalary += current.salary
     return total
@@ -19,7 +19,7 @@ let total = people.reduce((total, current) => {
     totalPeople: 0,
     totalSalary: 0,
 })
-console.log(total)
+console.log(totalPeopleSalary)
 
 
 // same thing but a little destructured
