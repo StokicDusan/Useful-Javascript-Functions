@@ -19,8 +19,13 @@ Be sure to change the source script for the script you wish to test.
 
 ## Collection
 Below are brief explanations and examples of methods and functionalities.  
+Table of contents:   
+- [Reduce method](#reduce-method)
+- [Map method](#map-method)
+- [Filter And Find method](#filter-find-method)
+- [Destructuring Objects and Arrays](#destructuring)
 
-### Reduce method
+### 1. Reduce method <a name="reduce-method"></a>
 The reduce() method executes a reducer function for each value of an array. Returns a single value which is the function's accumulated result.  
 In the example below, `people` is an array of objects which has `salary` and `age` properties with integer values.
 ```js
@@ -60,7 +65,8 @@ let { totalPeopleAge, totalSalary } = people.reduce((total, current) => {
 console.log(totalPeopleAge, totalSalary) // 185 2200
 ```
 
-### Map method
+
+### Map method <a name="map-method"></a>
 The map() method creates a new array with the results of calling a function for every array element. The map() method calls the provided function once for each element in an array, in order.
 ```js
 const ages = people.map((item)=>{
@@ -82,7 +88,8 @@ const uniquePositions = [...new Set(people.map((item) => item.position))];
 console.log(uniquePositions)        // [ 'position1', 'position2', 'position3', 'position4' ]
 ```
 
-### Filter And Find method
+
+### Filter And Find method <a name="filter-find-method"></a>
 The find() method returns the value of the first array element that passes a test (provided by a function) or undefined.  
 The filter() method creates an array filled with all array elements that pass a test (provided by a function).  
 ```js
@@ -118,7 +125,8 @@ const position3 = people.find((item) => item.position === "position3")
 console.log(position3);             // { name: 'name3', age: 23, position: 'position3' }
 ```
 
-### Destructuring Objects and Arrays
+
+### Destructuring Objects and Arrays <a name="destructuring"></a>
 
 ```js
 // Array Destructuring
@@ -162,6 +170,7 @@ function printPerson({ first, last, siblings: { brother } }) {
 }
 printPerson(person)
 ```
+
 
 ## Provide Feedback
 
