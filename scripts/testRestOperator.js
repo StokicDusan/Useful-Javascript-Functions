@@ -1,14 +1,15 @@
 // Rest Operator...
 
-// arrays
+// rest parameter with arrays
 const fruit = ['orange', 'banana', 'banana', 'lemon', 'apple'];
 const [first, ...restOfFruits] = fruit;
-console.log(first, restOfFruits);
+console.log(first)
+console.log(restOfFruits);
 
 const specificFruit = restOfFruits.find((item) => item === 'lemon');
 console.log(specificFruit)
 
-// objects
+// rest parameter with objects
 const person = {
     first: 'Aron',
     last: 'Gunnarsson',
@@ -22,7 +23,7 @@ const { first: firstName, ...restOfObject } = person;
 console.log(firstName)
 console.log(restOfObject)
 
-// functions
+// rest parameter with functions
 // we use rest when we declare the function,
 // we use spread when we invoke the function.
 

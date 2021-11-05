@@ -1,28 +1,30 @@
 // Spread Operator...
 
-const udemy = 'udemy';
-const letters = [...udemy];
+// Spread operator with Arrays
+const dusan = 'dusan';
+const letters = [...dusan];
 console.log(letters);
 
-const fruit = ['orange', 'banana', 'banana', 'lemon', 'apple'];
-const friend = ['josh', 'peter', 'bob', 'anna', 'kelly'];
+const fruit = ['orange', 'banana', 'banana', 'lemon'];
+const friend = ['josh', 'peter','kelly'];
 const bestFriend = 'john';
 
-const friends = [...fruit, bestFriend, ...friend];
-console.log(friends)
+const combineArray = [...fruit, bestFriend, ...friend];
+console.log(combineArray)
 
-//references -- both changed! 
-// const newFriends = friends;
-// newFriends[0] = 'susan';
-// console.log(newFriends)
-// console.log(friends)
+// copy array into a new one using spread operator
+const newCombineArray = [...combineArray];
+newCombineArray[0] = 'susan';
+console.log(newCombineArray)
+console.log(combineArray)
 
-const newFriends = [...friends];
-newFriends[0] = 'susan';
-console.log(newFriends)
-console.log(friends)
+// with references -- both changed! 
+const newCombineArrayRef = combineArray;
+newCombineArrayRef[0] = 'susan';
+console.log(newCombineArrayRef)
+console.log(combineArray)
 
-// Objects
+// Spread operator with Objects
 
 const person = {
     first: 'Aron',
