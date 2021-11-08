@@ -16,15 +16,15 @@ Table of contents:
 - [Welcome to Useful-Javascript-Functions](#welcome-to-useful-javascript-functions)
   - [Collection](#collection)
   - [How to use it](#how-to-use-it)
-    - [JavaScript Callback Functions <a name="callback-functions"></a>](#javascript-callback-functions-)
-    - [Reduce method <a name="reduce-method"></a>](#reduce-method-)
-    - [Map method <a name="map-method"></a>](#map-method-)
-    - [Filter And Find method <a name="filter-find-method"></a>](#filter-and-find-method-)
-    - [Destructuring Objects and Arrays <a name="destructuring"></a>](#destructuring-objects-and-arrays-)
-    - [Function Rest Parameter ... <a name="rest-function"></a>](#function-rest-parameter--)
-    - [Spread Operator <a name="spread-operator"></a>](#spread-operator-)
-    - [Array from() <a name="array.from"></a>](#array-from-)
-    - [Optional Chaining ?. <a name="optional-chaining"></a>](#optional-chaining--)
+    - [JavaScript Callback Functions](#javascript-callback-functions)
+    - [Reduce method](#reduce-method)
+    - [Map method](#map-method)
+    - [Filter And Find method](#filter-and-find-method)
+    - [Destructuring Objects and Arrays](#destructuring-objects-and-arrays)
+    - [Function Rest Parameter ...](#function-rest-parameter-)
+    - [Spread Operator](#spread-operator)
+    - [Array from()](#array-from)
+    - [Optional Chaining ?.](#optional-chaining-)
   - [Provide Feedback](#provide-feedback)
 
 ## How to use it
@@ -34,7 +34,7 @@ Be sure to change the source script for the script you wish to test.
     <script src="scripts/testGetElementHelper.js"></script>
 ```
 
-### JavaScript Callback Functions <a name="callback-functions"></a>
+### JavaScript Callback Functions
 Callback function is a function that we pass in as an argument and execute it later.
 
 ```js
@@ -59,7 +59,7 @@ handleName('dusan',reverseString);  // we are not invoking but referencing rever
 ```
 Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a website to load).  
 
-### Reduce method <a name="reduce-method"></a>
+### Reduce method
 The reduce() method executes a reducer function for each value of an array. Returns a single value which is the function's accumulated result.  
 In the example below, `people` is an array of objects which has `salary` and `age` properties with integer values.
 ```js
@@ -99,7 +99,7 @@ let { totalPeopleAge, totalSalary } = people.reduce((total, current) => {
 console.log(totalPeopleAge, totalSalary) // 185 2200
 ```
 
-### Map method <a name="map-method"></a>
+### Map method
 The map() method creates a new array with the results of calling a function for every array element. The map() method calls the provided function once for each element in an array, in order.
 ```js
 const ages = people.map((item)=>{
@@ -121,7 +121,7 @@ const uniquePositions = [...new Set(people.map((item) => item.position))];
 console.log(uniquePositions)        // [ 'position1', 'position2', 'position3', 'position4' ]
 ```
 
-### Filter And Find method <a name="filter-find-method"></a>
+### Filter And Find method
 The find() method returns the value of the first array element that passes a test (provided by a function) or undefined.  
 The filter() method creates an array filled with all array elements that pass a test (provided by a function).  
 ```js
@@ -157,7 +157,7 @@ const position3 = people.find((item) => item.position === "position3")
 console.log(position3);             // { name: 'name3', age: 23, position: 'position3' }
 ```
 
-### Destructuring Objects and Arrays <a name="destructuring"></a>
+### Destructuring Objects and Arrays
 
 ```js
 // Array Destructuring
@@ -202,7 +202,7 @@ function printPerson({ first, last, siblings: { brother } }) {
 printPerson(person)
 ```
 
-### Function Rest Parameter ... <a name="rest-function"></a>
+### Function Rest Parameter ...
 The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
 
 ```js
@@ -245,7 +245,7 @@ const testScores = [20, 30, 123, 10];
 getAverage(person.first, ...testScores)
 ```
 
-### Spread Operator <a name="spread-operator"></a>
+### Spread Operator
 The Spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object. The spread operator is often used in combination with destructuring.  
 Spread operator with Arrays.
 ```js
@@ -291,7 +291,7 @@ console.log(person)                 // { first: 'Aron', last: 'Gunnarsson', city
 console.log(newPerson)              // { first: 'Aron', last: 'Gunnarsson', city: 'Akureyri', job: 'Footballer', siblings: { brother: 'Arnor Thor' }, country: 'Iceland' }
 ```
 
-### Array from() <a name="array.from"></a>
+### Array from()
 from() returns an Array from any object with a length property or an iterable object.  
 from() turns array-like into array - string, nodeList, Set.
 
@@ -327,7 +327,7 @@ console.log(pages);                 // 3
 console.log(newItems);              // [ [ 0, 1, 2, 3, 4 ], [ 5, 6, 7, 8, 9 ], [ 10, 11 ] ]
 ```
 
-### Optional Chaining ?. <a name="optional-chaining"></a>
+### Optional Chaining ?.
 The optional chaining ?. is a safe way to access nested object properties, even if an intermediate property doesn’t exist.
 
 ```js
