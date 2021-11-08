@@ -4,7 +4,6 @@
 function makeUppercase(value){
     console.log(value.toUpperCase())
 }
-// makeUppercase('dusan');
 
 function reverseString(value){
     console.log(value.split('').reverse().join(''))
@@ -19,7 +18,8 @@ function handleName(name,cb){
 }
 
 handleName('dusan',makeUppercase); // we are not invoking but referencing makeUppercase function
-handleName('dusan',reverseString);
+handleName('dusan',reverseString); // we are not invoking but referencing reverseString function
+
 handleName('susan',function(value){
     console.log(value)
 })
