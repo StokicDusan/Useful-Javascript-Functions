@@ -10,6 +10,23 @@ This is a collection of tips and references to functions and some chunks and pie
 
 This collection can be used as a cheatsheet and will be expanded upon as I work on perfectiong my own knowledge in Javascript.
 
+## Collection
+Below are brief explanations and examples of methods and functionalities.  
+Table of contents:  
+- [Welcome to Useful-Javascript-Functions](#welcome-to-useful-javascript-functions)
+  - [Collection](#collection)
+  - [How to use it](#how-to-use-it)
+    - [JavaScript Callback Functions <a name="callback-functions"></a>](#javascript-callback-functions-)
+    - [Reduce method <a name="reduce-method"></a>](#reduce-method-)
+    - [Map method <a name="map-method"></a>](#map-method-)
+    - [Filter And Find method <a name="filter-find-method"></a>](#filter-and-find-method-)
+    - [Destructuring Objects and Arrays <a name="destructuring"></a>](#destructuring-objects-and-arrays-)
+    - [Function Rest Parameter ... <a name="rest-function"></a>](#function-rest-parameter--)
+    - [Spread Operator <a name="spread-operator"></a>](#spread-operator-)
+    - [Array from() <a name="array.from"></a>](#array-from-)
+    - [Optional Chaining ?. <a name="optional-chaining"></a>](#optional-chaining--)
+  - [Provide Feedback](#provide-feedback)
+
 ## How to use it
 Examples can be run from the scripts directory. Cloning and running a live server on this repository, you can test all the scripts on `index.html` which is setup for all the examples in the directory.  
 Be sure to change the source script for the script you wish to test.
@@ -17,15 +34,7 @@ Be sure to change the source script for the script you wish to test.
     <script src="scripts/testGetElementHelper.js"></script>
 ```
 
-## Collection
-Below are brief explanations and examples of methods and functionalities.  
-Table of contents:   
-- [Reduce method](#reduce-method)
-- [Map method](#map-method)
-- [Filter And Find method](#filter-find-method)
-- [Destructuring Objects and Arrays](#destructuring)
-
-### JavaScript Callback Functions
+### JavaScript Callback Functions <a name="callback-functions"></a>
 Callback function is a function that we pass in as an argument and execute it later.
 
 ```js
@@ -90,7 +99,6 @@ let { totalPeopleAge, totalSalary } = people.reduce((total, current) => {
 console.log(totalPeopleAge, totalSalary) // 185 2200
 ```
 
-
 ### Map method <a name="map-method"></a>
 The map() method creates a new array with the results of calling a function for every array element. The map() method calls the provided function once for each element in an array, in order.
 ```js
@@ -112,7 +120,6 @@ console.log(allPositions))          // [ 'position1', 'position2', 'position3', 
 const uniquePositions = [...new Set(people.map((item) => item.position))];
 console.log(uniquePositions)        // [ 'position1', 'position2', 'position3', 'position4' ]
 ```
-
 
 ### Filter And Find method <a name="filter-find-method"></a>
 The find() method returns the value of the first array element that passes a test (provided by a function) or undefined.  
@@ -149,7 +156,6 @@ console.log(seniorPeopleFind);      // undefined
 const position3 = people.find((item) => item.position === "position3")
 console.log(position3);             // { name: 'name3', age: 23, position: 'position3' }
 ```
-
 
 ### Destructuring Objects and Arrays <a name="destructuring"></a>
 
@@ -195,11 +201,11 @@ function printPerson({ first, last, siblings: { brother } }) {
 }
 printPerson(person)
 ```
-### Function Rest Parameter ...
+
+### Function Rest Parameter ... <a name="rest-function"></a>
 The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
 
 ```js
-
 // rest parameter with arrays
 const fruit = ['orange', 'banana', 'banana', 'lemon', 'apple'];
 const [first, ...restOfFruits] = fruit;
@@ -239,7 +245,7 @@ const testScores = [20, 30, 123, 10];
 getAverage(person.first, ...testScores)
 ```
 
-### Spread Operator
+### Spread Operator <a name="spread-operator"></a>
 The Spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object. The spread operator is often used in combination with destructuring.  
 Spread operator with Arrays.
 ```js
@@ -285,7 +291,7 @@ console.log(person)                 // { first: 'Aron', last: 'Gunnarsson', city
 console.log(newPerson)              // { first: 'Aron', last: 'Gunnarsson', city: 'Akureyri', job: 'Footballer', siblings: { brother: 'Arnor Thor' }, country: 'Iceland' }
 ```
 
-### Array from()
+### Array from() <a name="array.from"></a>
 from() returns an Array from any object with a length property or an iterable object.  
 from() turns array-like into array - string, nodeList, Set.
 
@@ -321,8 +327,8 @@ console.log(pages);                 // 3
 console.log(newItems);              // [ [ 0, 1, 2, 3, 4 ], [ 5, 6, 7, 8, 9 ], [ 10, 11 ] ]
 ```
 
-### Optional Chaining
-
+### Optional Chaining ?. <a name="optional-chaining"></a>
+The optional chaining ?. is a safe way to access nested object properties, even if an intermediate property doesn’t exist.
 
 ```js
 const people = [
@@ -334,6 +340,7 @@ const people = [
 people.forEach((item) => {
     //solution without optional chaining
     console.log(item.location && item.location.timezone && item.location.timezone.offset)
+
     //solution with optional chaining
     console.log(item?.location?.timezone?.offset || 'hello world');
 })
