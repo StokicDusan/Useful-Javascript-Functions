@@ -380,7 +380,6 @@ const users = [
     { id:3, name: 'anna' },
     { id:4, name: 'eddy'},
 ]
-s
 
 const articles = [
     { userId: 1, articles: ['one','two','three'] },
