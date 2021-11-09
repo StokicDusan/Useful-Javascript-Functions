@@ -28,6 +28,7 @@ Table of contents:
     - [Promises](#promises)
     - [Async/Await](#asyncawait)
     - [Fetch API](#fetch-api)
+      - [Errors](#errors)
 - [Provide Feedback](#provide-feedback)
 
 ## How to use it
@@ -472,6 +473,28 @@ const getRepos = async (urlLink) => {
     }
 }
 getRepos(url)
+```
+#### Errors
+Fetch only throws an error if cannot resolve. Error Response is still a response.
+```js
+const urlGit = 'https://api.github.com/users/StokicDusan/repos?per_page=100'
+
+const getRepos = async () => {
+    try {
+        const repo = await fetch(urlGit)
+        if(!repo.ok){
+            const msg = `There was na error "${repo.status} ${repo.statusText}"`
+            throw new Error(msg)
+        }
+        const data = await repo.json()
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const btn = document.querySelector('#btn')
+btn.addEventListener('click',getRepos)
 ```
 
 # Provide Feedback
