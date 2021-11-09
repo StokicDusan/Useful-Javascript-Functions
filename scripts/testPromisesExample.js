@@ -3,7 +3,7 @@
 // coloring second and third referencting the first
 
 // #frist - after 1s
-// #second - in 3s after first
+// #second - in 4s after first
 // #third - in 2s after second
 // IN SEQUENCE !!!
 
