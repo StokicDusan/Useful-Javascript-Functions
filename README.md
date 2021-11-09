@@ -27,7 +27,7 @@ Table of contents:
     - [Optional Chaining ?.](#optional-chaining-)
     - [Promises](#promises)
     - [Async/Await](#asyncawait)
-  - [Provide Feedback](#provide-feedback)
+- [Provide Feedback](#provide-feedback)
 
 ## How to use it
 Examples can be run from the scripts directory. Cloning and running a live server on this repository, you can test all the scripts on `index.html` which is setup for all the examples in the directory.  
@@ -446,8 +446,7 @@ function getArticles(userId) {
 In previous example async/await is used for a static array of objects. In practise, these object come from, from example, a quere on a database and this example is written with this in mind.
 
 
-
-## Provide Feedback
+# Provide Feedback
 
 If you encounter any bugs or have suggestions, please file an issue in the
 [Issues][issues-url]
