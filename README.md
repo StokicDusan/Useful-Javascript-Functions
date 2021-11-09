@@ -27,6 +27,7 @@ Table of contents:
     - [Optional Chaining ?.](#optional-chaining-)
     - [Promises](#promises)
     - [Async/Await](#asyncawait)
+    - [Fetch API](#fetch-api)
 - [Provide Feedback](#provide-feedback)
 
 ## How to use it
@@ -445,6 +446,33 @@ function getArticles(userId) {
 ```
 In previous example async/await is used for a static array of objects. In practise, these object come from, from example, a quere on a database and this example is written with this in mind.
 
+### Fetch API
+The Fetch API interface allows web browser to make HTTP (Ajax) requests to web servers. By default it's a GET requests, supports other methods as well.  
+Fetch returns a promise.
+
+```js
+const url = 'https://api.github.com/users/StokicDusan/repos?per_page=100'
+
+// previously we had to use the folowing:
+fetch(url)
+.then((resp)=>resp.json())
+.then((data)=>console.log(data))
+.catch((err)=>console.log(err))
+console.log(fetch(url))
+
+// with async/await, instead of .then()-ing we can use:
+const getRepos = async (urlLink) => {
+    try {
+        const repo = await fetch(urlLink)
+        const data = await repo.json()
+        console.log(data)
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
+getRepos(url)
+```
 
 # Provide Feedback
 
