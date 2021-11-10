@@ -474,6 +474,7 @@ const getRepos = async (urlLink) => {
 }
 getRepos(url)
 ```
+
 #### Errors
 Fetch only throws an error if cannot resolve. Error Response is still a response.
 ```js
@@ -496,6 +497,7 @@ const getRepos = async () => {
 const btn = document.querySelector('#btn')
 btn.addEventListener('click',getRepos)
 ```
+
 
 # Provide Feedback
 
