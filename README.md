@@ -40,7 +40,7 @@ Be sure to change the source script for the script you wish to test.
 ```html
     <script src="scripts/testGetElementHelper.js"></script>
 ```
-
+---
 ### JavaScript Callback Functions
 Callback function is a function that we pass in as an argument and execute it later.
 
@@ -66,6 +66,7 @@ handleName('dusan',reverseString);  // we are not invoking but referencing rever
 ```
 Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a website to load).  
 
+---
 ### Inner Height/Width
 The read-only innerHeight property of the Window interface returns the interior height of the window in pixels, including the height of the horizontal scroll bar, if present. The value of innerHeight is taken from the height of the window's layout viewport.  
 The read-only innerWidth property of the Window interface returns the interior width of the window in pixels, including the width of the vertical scroll bar, if present. The value of innerWidth is taken from the width of the window's layout viewport.  
@@ -83,6 +84,7 @@ btn.addEventListener('click', ()=> {
 })
 ```
 
+---
 ### Get Element Helper
 Getting elements like in function below prevents giving undefined for a non-existant element
 ```js
@@ -100,6 +102,7 @@ console.log(getElement('.heading'))
 console.log(getElement('.itemList',true))
 ```
 
+---
 ### Reduce method
 The reduce() method executes a reducer function for each value of an array. Returns a single value which is the function's accumulated result.  
 In the example below, `people` is an array of objects which has `salary` and `age` properties with integer values.
@@ -140,6 +143,7 @@ let { totalPeopleAge, totalSalary } = people.reduce((total, current) => {
 console.log(totalPeopleAge, totalSalary) // 185 2200
 ```
 
+---
 ### Map method
 The map() method creates a new array with the results of calling a function for every array element. The map() method calls the provided function once for each element in an array, in order.
 ```js
@@ -162,6 +166,7 @@ const uniquePositions = [...new Set(people.map((item) => item.position))];
 console.log(uniquePositions)        // [ 'position1', 'position2', 'position3', 'position4' ]
 ```
 
+---
 ### Filter And Find method
 The find() method returns the value of the first array element that passes a test (provided by a function) or undefined.  
 The filter() method creates an array filled with all array elements that pass a test (provided by a function).  
@@ -198,6 +203,7 @@ const position3 = people.find((item) => item.position === "position3")
 console.log(position3);             // { name: 'name3', age: 23, position: 'position3' }
 ```
 
+---
 ### Destructuring Objects and Arrays
 
 ```js
@@ -243,6 +249,7 @@ function printPerson({ first, last, siblings: { brother } }) {
 printPerson(person)
 ```
 
+---
 ### Function Rest Parameter ...
 The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
 
@@ -286,6 +293,7 @@ const testScores = [20, 30, 123, 10];
 getAverage(person.first, ...testScores)
 ```
 
+---
 ### Spread Operator
 The Spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object. The spread operator is often used in combination with destructuring.  
 Spread operator with Arrays.
@@ -332,6 +340,7 @@ console.log(person)                 // { first: 'Aron', last: 'Gunnarsson', city
 console.log(newPerson)              // { first: 'Aron', last: 'Gunnarsson', city: 'Akureyri', job: 'Footballer', siblings: { brother: 'Arnor Thor' }, country: 'Iceland' }
 ```
 
+---
 ### Array from()
 from() returns an Array from any object with a length property or an iterable object.  
 from() turns array-like into array - string, nodeList, Set.
@@ -368,6 +377,7 @@ console.log(pages);                 // 3
 console.log(newItems);              // [ [ 0, 1, 2, 3, 4 ], [ 5, 6, 7, 8, 9 ], [ 10, 11 ] ]
 ```
 
+---
 ### Optional Chaining ?.
 The optional chaining ?. is a safe way to access nested object properties, even if an intermediate property doesn’t exist.
 
@@ -389,8 +399,8 @@ people.forEach((item) => {
 Iterating over the list in the solution with optional chaining gives the same result as the one without except that it can give an answer for a non-existant property instead of *undefined*.  
 The optional chaining solution is also shorter and simpler to implement.
 
+---
 ### Promises
-
 A JavaScript Promise object contains both the producing code and calls to the consuming code. When the executing code obtains the result, it should call one of the two callbacks, Success or Error.  
 A JavaScript Promise object can be: Pending, Fulfilled, Rejected.
 
@@ -409,6 +419,7 @@ console.log(promise)                // Promise {}
 promise.then((data)=>console.log(data)).catch((err)=>console.log(err));
 ```
 
+---
 ### Async/Await
 The keyword `async` before a function makes the function async and always return a promise. Await waits till promise is settled. Error is handled by a try/catch block.
 
@@ -484,6 +495,7 @@ function getArticles(userId) {
 ```
 In previous example async/await is used for a static array of objects. In practise, these object come from, from example, a quere on a database and this example is written with this in mind.
 
+---
 ### Fetch API
 The Fetch API interface allows web browser to make HTTP (Ajax) requests to web servers. By default it's a GET requests, supports other methods as well.  
 Fetch returns a promise.
@@ -534,6 +546,8 @@ const getRepos = async () => {
 const btn = document.querySelector('#btn')
 btn.addEventListener('click',getRepos)
 ```
+
+---
 ### Timestamp
 The Date object is used to work with dates and times. Date objects are created with new Date(). getTime() returns the number of milliseconds since January 1, 1970.
 ```js
