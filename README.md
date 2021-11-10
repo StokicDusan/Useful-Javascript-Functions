@@ -17,6 +17,7 @@ Table of contents:
   - [Collection](#collection)
   - [How to use it](#how-to-use-it)
     - [JavaScript Callback Functions](#javascript-callback-functions)
+    - [Inner Height/Width](#inner-heightwidth)
     - [Reduce method](#reduce-method)
     - [Map method](#map-method)
     - [Filter And Find method](#filter-and-find-method)
@@ -62,6 +63,23 @@ handleName('dusan',makeUppercase);  // we are not invoking but referencing makeU
 handleName('dusan',reverseString);  // we are not invoking but referencing reverseString function
 ```
 Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a website to load).  
+
+### Inner Height/Width
+The read-only innerHeight property of the Window interface returns the interior height of the window in pixels, including the height of the horizontal scroll bar, if present. The value of innerHeight is taken from the height of the window's layout viewport.  
+The read-only innerWidth property of the Window interface returns the interior width of the window in pixels, including the width of the vertical scroll bar, if present. The value of innerWidth is taken from the width of the window's layout viewport.  
+The Element.getBoundingClientRect() method returns a DOMRect object providing information about the size of an element and its position relative to the viewport. 
+```js
+console.log('height' , window.innerHeight); 
+console.log('width' , window.innerWidth);
+
+const btn = document.querySelector('#btn')
+const box = document.querySelector('#box')
+
+btn.addEventListener('click', ()=> {
+    const dimensions = box.getBoundingClientRect()
+    console.log(dimensions)
+})
+```
 
 ### Reduce method
 The reduce() method executes a reducer function for each value of an array. Returns a single value which is the function's accumulated result.  
