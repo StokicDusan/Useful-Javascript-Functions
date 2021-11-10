@@ -32,12 +32,13 @@ const agesDouble = people.map((item)=>{
 console.log(agesDouble)
 
 
-const names = people.map((item)=> `<h2>${item.name}</h2>`);
-const result = document.querySelector('#result');
-result.innerHTML = names.join('')
+ const names = people.map((item)=> `<h2>${item.name}</h2>`);
+ const result = document.querySelector('#result');
+ result.innerHTML = names.join('')
 
 //Unique values ------
 
+console.log(people.map((item)=>item.position))
 const positions = ['all', ...new Set(people.map((item) => item.position))];
 console.log(positions)
 
