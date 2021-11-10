@@ -205,6 +205,7 @@ console.log(position3);             // { name: 'name3', age: 23, position: 'posi
 
 ---
 ### Destructuring Objects and Arrays
+The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 ```js
 // Array Destructuring
