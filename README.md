@@ -16,7 +16,6 @@ Table of contents:
   - [Categories](#categories)
   - [How to use it](#how-to-use-it)
   - [JavaScript](#javascript)
-    - [Function Rest Parameter ...](#function-rest-parameter-)
     - [Spread Operator](#spread-operator)
     - [Array from()](#array-from)
     - [Optional Chaining ?.](#optional-chaining-)
@@ -42,51 +41,8 @@ Be sure to change the source script for the script you wish to test.
  - [Map Method](JavaScript/map-method.md)
  - [Filter and Find Method](JavaScript/filter-find-method.md)
  - [Destructuring Objects and Arrays](JavaScript/destructuring-objects-arrays.md)
+ - [Function Rest Parameter ...](JavaScript/rest-parameter.md)
 
-### Function Rest Parameter ...
-The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
-
-```js
-// rest parameter with arrays
-const fruit = ['orange', 'banana', 'banana', 'lemon', 'apple'];
-const [first, ...restOfFruits] = fruit;
-console.log(first)                  // orange
-console.log(restOfFruits);          // [ 'banana', 'banana', 'lemon', 'apple' ]
-
-const specificFruit = restOfFruits.find((item) => item === 'lemon');
-console.log(specificFruit)          // lemon
-```
-Using rest parameter with objects
-```js
-const person = {
-    first: 'Aron',
-    last: 'Gunnarsson',
-    city: 'Akureyri',
-    job: 'Football player',
-    siblings: {
-        brother: 'Arnor Thor',
-    },
-};
-const { first: firstName, ...restOfObject } = person;
-console.log(firstName)              // Aron
-console.log(restOfObject)           // { last: 'Gunnarsson', city: 'Akureyri', job: 'Football player', siblings: { brother: 'Arnor Thor' } }
-```
-Using rest parameter with functions
-```js
-// we use rest when we declare the function,
-// we use spread when we invoke the function.
-
-const getAverage = (name, ...scores) => {
-    console.log(name);              // Aron
-    console.log(scores);            // [ 20, 30, 123, 10 ]
-    const average = scores.reduce((total, current) => { return total += current }, 0) / scores.length;
-    console.log(average)            // 45.75
-}
-const testScores = [20, 30, 123, 10];
-getAverage(person.first, ...testScores)
-```
-
----
 ### Spread Operator
 The Spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object. The spread operator is often used in combination with destructuring.  
 Spread operator with Arrays.
