@@ -16,7 +16,6 @@ Table of contents:
   - [Categories](#categories)
   - [How to use it](#how-to-use-it)
   - [JavaScript](#javascript)
-    - [Promises](#promises)
     - [Async/Await](#asyncawait)
     - [Fetch API](#fetch-api)
       - [Errors](#errors)
@@ -42,27 +41,8 @@ Be sure to change the source script for the script you wish to test.
  - [Spread Operator](JavaScript/spread-operator.md)
  - [Array from()](JavaScript/array-dot-from.md)
  - [Optional Chaining ?.](JavaScript/optional-chaining.md)
+ - [Promises](JavaScript/promises.md
 
-### Promises
-A JavaScript Promise object contains both the producing code and calls to the consuming code. When the executing code obtains the result, it should call one of the two callbacks, Success or Error.  
-A JavaScript Promise object can be: Pending, Fulfilled, Rejected.
-
-```js
-const value = 2
-const promise = new Promise((resolve,reject)=>{
-    const random = Math.floor(Math.random() * 3)
-    if(random === value){
-        resolve('hello world')
-    }else{
-        reject('there was an error')
-    }
-})
-
-console.log(promise)                // Promise {}
-promise.then((data)=>console.log(data)).catch((err)=>console.log(err));
-```
-
----
 ### Async/Await
 The keyword `async` before a function makes the function async and always return a promise. Await waits till promise is settled. Error is handled by a try/catch block.
 
