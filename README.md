@@ -37,7 +37,7 @@ Be sure to change the source script for the script you wish to test.
  - [Spread Operator](JavaScript/spread-operator.md)
  - [Array from()](JavaScript/array-dot-from.md)
  - [Optional Chaining ?.](JavaScript/optional-chaining.md)
- - [Promises](JavaScript/promises.md
+ - [Promises](JavaScript/promises.md)
  - [Async/Await](JavaScript/async-await.md)
  - [Fetch API](JavaScript/fetch-api.md)
  - [Timestamp](JavaScript/timestamp.md)
