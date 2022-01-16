@@ -16,7 +16,6 @@ Table of contents:
   - [Categories](#categories)
   - [How to use it](#how-to-use-it)
   - [JavaScript](#javascript)
-    - [Optional Chaining ?.](#optional-chaining-)
     - [Promises](#promises)
     - [Async/Await](#asyncawait)
     - [Fetch API](#fetch-api)
@@ -42,30 +41,8 @@ Be sure to change the source script for the script you wish to test.
  - [Function Rest Parameter ...](JavaScript/rest-parameter.md)
  - [Spread Operator](JavaScript/spread-operator.md)
  - [Array from()](JavaScript/array-dot-from.md)
+ - [Optional Chaining ?.](JavaScript/optional-chaining.md)
 
-
-### Optional Chaining ?.
-The optional chaining ?. is a safe way to access nested object properties, even if an intermediate property doesn’t exist.
-
-```js
-const people = [
-    { name: 'boban', location: { street: '123 main street', timezone: { offset: '+7:00'} }, },
-    { name: 'peter', location: { street: '123 Elm street', }, },
-    { name: 'susan', location: { street: '123 Pear street', timezone: { offset: '+9:00'} }, },
-]
-
-people.forEach((item) => {
-    //solution without optional chaining
-    console.log(item.location && item.location.timezone && item.location.timezone.offset)
-
-    //solution with optional chaining
-    console.log(item?.location?.timezone?.offset || 'hello world');
-})
-```
-Iterating over the list in the solution with optional chaining gives the same result as the one without except that it can give an answer for a non-existant property instead of *undefined*.  
-The optional chaining solution is also shorter and simpler to implement.
-
----
 ### Promises
 A JavaScript Promise object contains both the producing code and calls to the consuming code. When the executing code obtains the result, it should call one of the two callbacks, Success or Error.  
 A JavaScript Promise object can be: Pending, Fulfilled, Rejected.
