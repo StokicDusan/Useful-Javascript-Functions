@@ -16,7 +16,6 @@ Table of contents:
   - [Categories](#categories)
   - [How to use it](#how-to-use-it)
   - [JavaScript](#javascript)
-    - [Timestamp](#timestamp)
 - [Provide Feedback](#provide-feedback)
 
 ## How to use it
@@ -41,52 +40,7 @@ Be sure to change the source script for the script you wish to test.
  - [Promises](JavaScript/promises.md
  - [Async/Await](JavaScript/async-await.md)
  - [Fetch API](JavaScript/fetch-api.md)
-
-### Timestamp
-The Date object is used to work with dates and times. Date objects are created with new Date(). getTime() returns the number of milliseconds since January 1, 1970.
-```js
-// Timestamps
-
-console.log(new Date());
-console.log(Date.now())
-console.log(new Date().getTime())
-console.log(new Date().valueOf())
-
-setTimeout(()=>{
-    console.log(Date.now());
-},1000)
-
-// silly example
-
-let people = [];
-people = [...people, {id:Date.now(), name:'peter'}];
-
-setTimeout( () => {
-    people = [...people, {id:Date.now(), name:'john'}];
-    console.log(people)
-},1000)
-
-// create/get dates
-
-console.log(new Date(1614689018032))
-const now = Date.now()
-const futureDate = new Date(now+3600000)
-console.log(Date())
-console.log(futureDate)
-
-// Diference between dates
-
-const firstDate = new Date();
-const secondDate = new Date(2021,10,21); // 21. Nov 2021.
-
-const firstValue = firstDate.getTime();
-const secondValue = secondDate.getTime();
-const timeDifference = secondValue - firstValue
-
-console.log(timeDifference)
-const days = timeDifference /(1000*60*60*24)
-console.log(days)
-```
+ - [Timestamp](JavaScript/timestamp.md)
 
 # Provide Feedback
 If you encounter any bugs or have suggestions, please file an issue in the
