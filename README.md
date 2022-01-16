@@ -5,15 +5,15 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Welcome to Useful-Javascript-Functions 
-This is a collection of tips and references to functions and some chunks and pieces of useful Javascript functionalities that might come in handy to beginners for learning or working on Javascript projects.
+This is a collection of tips and some small chunks and pieces of useful Javascript functionalities that I learn day to day across a variety of websites. This might come in handy to beginners for learning or working on Javascript projects.
 
 This collection can be used as a cheatsheet and will be expanded upon as I work on perfectiong my own knowledge in Javascript.
 
-## Collection
-Below are brief explanations and examples of methods and functionalities.  
+## Categories
+Below are liks to 
 Table of contents:  
 - [Welcome to Useful-Javascript-Functions](#welcome-to-useful-javascript-functions)
-  - [Collection](#collection)
+  - [Categories](#categories)
   - [How to use it](#how-to-use-it)
     - [JavaScript Callback Functions](#javascript-callback-functions)
     - [Inner Height/Width](#inner-heightwidth)
