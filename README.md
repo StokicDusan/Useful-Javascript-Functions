@@ -16,7 +16,6 @@ Table of contents:
   - [Categories](#categories)
   - [How to use it](#how-to-use-it)
   - [JavaScript](#javascript)
-    - [Get Element Helper](#get-element-helper)
     - [Reduce method](#reduce-method)
     - [Map method](#map-method)
     - [Filter And Find method](#filter-and-find-method)
@@ -42,24 +41,8 @@ Be sure to change the source script for the script you wish to test.
 ## JavaScript 
  - [JavaScript Callback Functions](JavaScript/callback-functions.md)
  - [Inner Height/Width](JavaScript/inner-height-width.md)
-### Get Element Helper
-Getting elements like in function below prevents giving undefined for a non-existant element
-```js
-// const heading = document.querySelector('.heading')
-// const listItems = document.querySelectorAll('.itemList')
+ - [Get Element Helper](JavaScript/get-element-helper.md)
 
-const getElement = (selector,isList) => {
-    const el = isList?[...document.querySelectorAll(selector)]:document.querySelector(selector);
-    if(!isList && el) return el;
-    if(isList && !el.length < 1) return el;
-    throw new Error(`double check selector : ${selector}`)
-} 
-// now we are trowing an error instead of having undefined
-console.log(getElement('.heading'))
-console.log(getElement('.itemList',true))
-```
-
----
 ### Reduce method
 The reduce() method executes a reducer function for each value of an array. Returns a single value which is the function's accumulated result.  
 In the example below, `people` is an array of objects which has `salary` and `age` properties with integer values.
