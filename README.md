@@ -7,7 +7,7 @@
 # Welcome to Useful-Javascript-Functions 
 This is a collection of tips and some small chunks and pieces of useful Javascript functionalities that I learn day to day across a variety of websites. This might come in handy to beginners for learning or working on Javascript projects.
 
-This collection can be used as a cheatsheet and will be expanded upon as I work on perfectiong my own knowledge in Javascript.
+This collection can be used as a reminder and will be expanded upon as I work on perfectiong my own knowledge in Javascript.
 
 ## Categories
 Below are liks to 
@@ -15,8 +15,7 @@ Table of contents:
 - [Welcome to Useful-Javascript-Functions](#welcome-to-useful-javascript-functions)
   - [Categories](#categories)
   - [How to use it](#how-to-use-it)
-    - [JavaScript Callback Functions](#javascript-callback-functions)
-    - [Inner Height/Width](#inner-heightwidth)
+  - [JavaScript](#javascript)
     - [Get Element Helper](#get-element-helper)
     - [Reduce method](#reduce-method)
     - [Map method](#map-method)
@@ -40,50 +39,9 @@ Be sure to change the source script for the script you wish to test.
     <script src="scripts/testGetElementHelper.js"></script>
 ```
 ---
-### JavaScript Callback Functions
-Callback function is a function that we pass in as an argument and execute it later.
-
-```js
-function makeUppercase(value){
-    console.log(value.toUpperCase())                    // DUSAN STOKIC, DUSAN STOKIC, DUSAN STOKIC
-}
-
-function reverseString(value){
-    console.log(value.split('').reverse().join(''))     // cikots nasud, cikots nasud, cikots nasud
-}
-
-function handleName(name,cb){
-    const fullName = `${name} stokic`
-    cb(fullName)
-    //some more logic
-    cb(fullName)
-    cb(fullName)
-}
-
-handleName('dusan',makeUppercase);  // we are not invoking but referencing makeUppercase function
-handleName('dusan',reverseString);  // we are not invoking but referencing reverseString function
-```
-Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a website to load).  
-
----
-### Inner Height/Width
-The read-only innerHeight property of the Window interface returns the interior height of the window in pixels, including the height of the horizontal scroll bar, if present. The value of innerHeight is taken from the height of the window's layout viewport.  
-The read-only innerWidth property of the Window interface returns the interior width of the window in pixels, including the width of the vertical scroll bar, if present. The value of innerWidth is taken from the width of the window's layout viewport.  
-The Element.getBoundingClientRect() method returns a DOMRect object providing information about the size of an element and its position relative to the viewport. 
-```js
-console.log('height' , window.innerHeight); 
-console.log('width' , window.innerWidth);
-
-const btn = document.querySelector('#btn')
-const box = document.querySelector('#box')
-
-btn.addEventListener('click', ()=> {
-    const dimensions = box.getBoundingClientRect()
-    console.log(dimensions)
-})
-```
-
----
+## JavaScript 
+ - [JavaScript Callback Functions](JavaScript/callback-functions.md)
+ - [Inner Height/Width](JavaScript/inner-height-width.md)
 ### Get Element Helper
 Getting elements like in function below prevents giving undefined for a non-existant element
 ```js
