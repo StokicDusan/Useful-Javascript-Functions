@@ -24,7 +24,6 @@ Be sure to change the source script for the script you wish to test.
 ```html
     <script src="scripts/testGetElementHelper.js"></script>
 ```
----
 ## JavaScript 
  - [JavaScript Callback Functions](JavaScript/callback-functions.md)
  - [Inner Height/Width](JavaScript/inner-height-width.md)
