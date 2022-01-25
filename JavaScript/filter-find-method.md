@@ -34,3 +34,5 @@ console.log(seniorPeopleFind);      // undefined
 const position3 = people.find((item) => item.position === "position3")
 console.log(position3);             // { name: 'name3', age: 23, position: 'position3' }
 ```
+
+[Script for testing](/scripts/JavaScript/testFilterAndFind.js)
