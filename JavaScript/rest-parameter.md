@@ -41,3 +41,5 @@ const getAverage = (name, ...scores) => {
 const testScores = [20, 30, 123, 10];
 getAverage(person.first, ...testScores)
 ```
+
+[Script for testing](/scripts/JavaScript/testRestOperator.js)
