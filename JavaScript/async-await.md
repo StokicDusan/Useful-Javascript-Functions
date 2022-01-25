@@ -73,3 +73,5 @@ function getArticles(userId) {
 }
 ```
 In previous example async/await is used for a static array of objects. In practise, these object come from, from example, a quere on a database and this example is written with this in mind.
+
+[Script for testing](/scripts/JavaScript/testAsyncAwait.js)
