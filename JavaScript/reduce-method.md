@@ -38,3 +38,7 @@ let { totalPeopleAge, totalSalary } = people.reduce((total, current) => {
 })
 console.log(totalPeopleAge, totalSalary) // 185 2200
 ```
+
+[1. Script for testing](/scripts/JavaScript/testReduce1.js)
+
+[2. Script for testing](/scripts/JavaScript/testReduce2.js)
