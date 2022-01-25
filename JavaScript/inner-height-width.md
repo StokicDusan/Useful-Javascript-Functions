@@ -15,3 +15,5 @@ btn.addEventListener('click', ()=> {
     console.log(dimensions)
 })
 ```
+
+[Script for testing](/scripts/JavaScript/testWidthHeight.js)
