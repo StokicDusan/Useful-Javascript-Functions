@@ -44,3 +44,5 @@ const newPerson = {...person, country: 'Iceland', job: 'Footballer' }
 console.log(person)                 // { first: 'Aron', last: 'Gunnarsson', city: 'Akureyri', job: 'Football player', siblings: { brother: 'Arnor Thor' } }
 console.log(newPerson)              // { first: 'Aron', last: 'Gunnarsson', city: 'Akureyri', job: 'Footballer', siblings: { brother: 'Arnor Thor' }, country: 'Iceland' }
 ```
+
+[Script for testing](/scripts/JavaScript/testSpreadOperator.js)
