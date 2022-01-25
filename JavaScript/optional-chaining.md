@@ -19,3 +19,5 @@ people.forEach((item) => {
 ```
 Iterating over the list in the solution with optional chaining gives the same result as the one without except that it can give an answer for a non-existant property instead of *undefined*.  
 The optional chaining solution is also shorter and simpler to implement.
+
+[Script for testing](/scripts/JavaScript/testOptionalChaining.js)
