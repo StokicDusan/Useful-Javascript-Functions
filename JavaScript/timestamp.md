@@ -44,3 +44,5 @@ console.log(timeDifference)
 const days = timeDifference /(1000*60*60*24)
 console.log(days)
 ```
+
+[Script for testing](/scripts/JavaScript/testTimestamps.js)
