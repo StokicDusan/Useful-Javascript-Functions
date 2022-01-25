@@ -15,3 +15,5 @@ const getElement = (selector,isList) => {
 console.log(getElement('.heading'))
 console.log(getElement('.itemList',true))
 ```
+
+[Script for testing](/scripts/JavaScript/testGetElementHelper.js)
