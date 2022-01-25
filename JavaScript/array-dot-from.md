@@ -33,4 +33,6 @@ const newItems = Array.from({ length: pages }, (_, index) => {
 console.log(items);                 // [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
 console.log(pages);                 // 3
 console.log(newItems);              // [ [ 0, 1, 2, 3, 4 ], [ 5, 6, 7, 8, 9 ], [ 10, 11 ] ]
-```
+```  
+
+[Script for testing](/scripts/JavaScript/testArraydotfrom.js)
