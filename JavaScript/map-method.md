@@ -20,3 +20,5 @@ console.log(allPositions))          // [ 'position1', 'position2', 'position3', 
 const uniquePositions = [...new Set(people.map((item) => item.position))];
 console.log(uniquePositions)        // [ 'position1', 'position2', 'position3', 'position4' ]
 ```
+
+[Script for testing](/scripts/JavaScript/testMap1.js)
