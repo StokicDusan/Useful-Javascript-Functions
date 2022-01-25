@@ -23,3 +23,8 @@ handleName('dusan',makeUppercase);  // we are not invoking but referencing makeU
 handleName('dusan',reverseString);  // we are not invoking but referencing reverseString function
 ```
 Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a website to load).  
+
+[Script for testing](/scripts/JavaScript/testCallbackFunctions.js)
+
+
+[Callback hell script](/scripts/JavaScript/testCallbackFunctionsHell.js)
