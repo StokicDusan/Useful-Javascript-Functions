@@ -44,3 +44,5 @@ function printPerson({ first, last, siblings: { brother } }) {
 }
 printPerson(person)
 ```
+
+[Script for testing](/scripts/JavaScript/testDestructuring.js)
