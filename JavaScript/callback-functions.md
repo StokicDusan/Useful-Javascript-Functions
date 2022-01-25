@@ -26,5 +26,4 @@ Where callbacks really shine are in asynchronous functions, where one function h
 
 [Script for testing](/scripts/JavaScript/testCallbackFunctions.js)
 
-
 [Callback hell script](/scripts/JavaScript/testCallbackFunctionsHell.js)
