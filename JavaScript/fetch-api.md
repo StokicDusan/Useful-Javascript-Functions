@@ -49,3 +49,7 @@ const getRepos = async () => {
 const btn = document.querySelector('#btn')
 btn.addEventListener('click',getRepos)
 ```
+
+[Script for testing](/scripts/JavaScript/testFetchAPI.js)
+
+[Script for testing error](/scripts/JavaScript/testFetchAPIErrors.js)
