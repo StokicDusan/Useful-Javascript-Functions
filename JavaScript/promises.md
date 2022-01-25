@@ -17,3 +17,7 @@ const promise = new Promise((resolve,reject)=>{
 console.log(promise)                // Promise {}
 promise.then((data)=>console.log(data)).catch((err)=>console.log(err));
 ```
+
+[Script for testing](/scripts/JavaScript/testPromises.js)
+
+[Script for testing with examples](/scripts/JavaScript/testPromisesExample.js)
