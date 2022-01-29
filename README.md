@@ -57,3 +57,4 @@ section of the project.
 [repo-size-url]: https://img.shields.io/github/repo-size/StokicDusan/Useful-Javascript-Functions
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=plastice&logo=linkedin&logoColor=white
 [linkedin-url]: https://linkedin.com/in/stokicdusan
+
