@@ -1,4 +1,7 @@
-fg
+# Match Objects in array
+
+If you need to "left join" objects in an array based on one (or more) property, you can use the method below.  
+In the example below, a new array of objects in made on the `position` property and the values in `salary` property are added up for that position.
 
 ```js
 const people = [{
