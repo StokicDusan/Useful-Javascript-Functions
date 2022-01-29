@@ -97,7 +97,4 @@ const result = Object.values(people.reduce((total, current) => {
     return total;
   }, {}));
   
-  console.log(result);      // [ { position: 'position1', salary: 200 },
-                            //   { position: 'position2', salary: 500 },
-                            //   { position: 'position3', salary: 450 },
-                            //   { position: 'position4', salary: 1050 } ]
+  console.log(result);
