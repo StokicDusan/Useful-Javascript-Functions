@@ -40,6 +40,7 @@ Be sure to change the source script for the script you wish to test.
  - [Async/Await](JavaScript/async-await.md)
  - [Fetch API](JavaScript/fetch-api.md)
  - [Timestamp](JavaScript/timestamp.md)
+ - [Match Objects in Array](JavaScript/match-objects-in-array.md)
 
 # Provide Feedback
 If you encounter any bugs or have suggestions, please file an issue in the
@@ -56,3 +57,4 @@ section of the project.
 [repo-size-url]: https://img.shields.io/github/repo-size/StokicDusan/Useful-Javascript-Functions
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=plastice&logo=linkedin&logoColor=white
 [linkedin-url]: https://linkedin.com/in/stokicdusan
+
