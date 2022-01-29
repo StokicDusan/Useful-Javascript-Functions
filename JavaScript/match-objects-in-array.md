@@ -100,6 +100,15 @@ const result = Object.values(people.reduce((total, current) => {
       position,
       salary: total[position] ? total[position].salary + current.salary : current.salary,
     };
+    console.log(total[position]);
+    // { position: 'position1', salary: 100 } 
+    // { position: 'position2', salary: 500 } 
+    // { position: 'position3', salary: 230 } 
+    // { position: 'position4', salary: 350 } 
+    // { position: 'position4', salary: 700 } 
+    // { position: 'position4', salary: 1050 } 
+    // { position: 'position3', salary: 450 } 
+    // { position: 'position1', salary: 200 }
     return total;
   }, {}));
   
