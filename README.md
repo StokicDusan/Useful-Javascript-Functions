@@ -42,7 +42,7 @@ Be sure to change the source script for the script you wish to test.
  - [Timestamp](JavaScript/timestamp.md)
  - [Match Objects in Array](JavaScript/match-objects-in-array.md)
 
-# Provide Feedback
+## Provide Feedback
 If you encounter any bugs or have suggestions, please file an issue in the
 [Issues][issues-url]
 section of the project.
